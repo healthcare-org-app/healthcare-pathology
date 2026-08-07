@@ -1,0 +1,11 @@
+name: pathology-service
+port: 8404
+lang: python
+description: "pathology-service \u2014 domain: lab"
+http_deps:
+- specimen-tracking-service
+- patients-service
+- audit-log-service
+publishes:
+- audit.event
+subscribes: []
